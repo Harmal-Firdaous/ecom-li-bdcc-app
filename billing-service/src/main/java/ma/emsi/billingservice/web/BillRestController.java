@@ -3,12 +3,15 @@ package ma.emsi.billingservice.web;
 import ma.emsi.billingservice.entities.Bill;
 import ma.emsi.billingservice.feign.CustomerRestClient;
 import ma.emsi.billingservice.feign.ProductRestClient;
+import ma.emsi.billingservice.model.Customer;
 import ma.emsi.billingservice.repository.BillRepository;
 import ma.emsi.billingservice.repository.ProductItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class BillRestController {
